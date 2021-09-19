@@ -1,0 +1,19 @@
+int SoundSensor=2; 
+int LED=3; 
+int AnalogPinA0 = A0; 
+boolean LEDStatus=false;
+void setup() {
+ pinMode(SoundSensor,INPUT);
+ pinMode(LED,OUTPUT); 
+ 
+ Serial.begin(9600); 
+}
+void loop() {
+  int AnalogPinA0value = analogRead(AnalogPinA0);
+  Serial.println(AnalogPinA0value);
+delay(1000);
+}
+
+
+
+
